@@ -77,7 +77,7 @@ describe('metrics', function() {
 
       sinon.assert.calledOnce(spy);
       var req = spy.getCall(0).args[0];
-      assert.strictEqual(req.url, 'https://api.segment.io/v1/m');
+      assert.strictEqual(req.url, 'https://api.dreamdata.cloud/v1/m');
       assert.strictEqual(
         req.requestBody,
         '{"series":[{"type":"Counter","metric":"test1","value":1,"tags":{"foo":"bar"}},{"type":"Counter","metric":"test2","value":1,"tags":{}}]}'
